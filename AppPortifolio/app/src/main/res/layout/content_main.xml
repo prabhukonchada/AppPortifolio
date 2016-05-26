@@ -12,44 +12,72 @@
     tools:context="com.prabhukonchada.appportifolio.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="@dimen/headerTextSize"
-        android:id="@+id/headerText"
-        android:layout_height="wrap_content" />
+        android:id="@+id/headerLayout"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/popularMoviesRedirectionButton"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/headerTextSize"
+            android:id="@+id/headerText"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/stockHawkRedirectionButton"/>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buildItBiggerRedirectionButton"/>
+    <LinearLayout
+        android:layout_below="@+id/headerLayout"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/makeYourAppMaterialRedirectionButton"/>
+        <Button
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popularMoviesRedirectionButton"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/goUbiquitousRedirectionButton"/>
+        <Button
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stockHawkRedirectionButton"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/capstoneRedirectionButton"/>
+        <Button
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buildItBiggerRedirectionButton"/>
 
+        <Button
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/makeYourAppMaterialRedirectionButton"/>
+
+        <Button
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goUbiquitousRedirectionButton"/>
+
+        <Button
+            android:background="@color/deepOrange"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capstoneRedirectionButton"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
