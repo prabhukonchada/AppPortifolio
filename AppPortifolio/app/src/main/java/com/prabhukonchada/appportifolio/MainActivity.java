@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         // To initialise components used in the activity
         initComponents();
+
+        // Set component titles programatically
+        setComponentTitlesProgramatically();
     }
 
     @Override
@@ -44,21 +47,6 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     /***
@@ -73,6 +61,20 @@ public class MainActivity extends AppCompatActivity {
         openGoUbiquitousApp = (Button)findViewById(R.id.goUbiquitousRedirectionButton);
         openCapstoneApp = (Button)findViewById(R.id.capstoneRedirectionButton);
         openMakeYourAppMaterialApp = (Button)findViewById(R.id.makeYourAppMaterialRedirectionButton);
+    }
+
+    /***
+     * Set titles programatically for the layout elements.
+     */
+    public void setComponentTitlesProgramatically()
+    {
+        headerTitle.setText("My Awesome Apps !");
+        openPopularMoviesApp.setText("Popular Movies");
+        openBuildItBiggerApp.setText("Build It Bigger");
+        openStockHawkApp.setText("Stock Hawk");
+        openGoUbiquitousApp.setText("Go Ubiquitous");
+        openMakeYourAppMaterialApp.setText("Make Your App Material");
+        openCapstoneApp.setText("Capstone App");
     }
 
 }
