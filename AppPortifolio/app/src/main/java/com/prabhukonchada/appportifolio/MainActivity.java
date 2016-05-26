@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void setComponentTitlesProgramatically()
     {
-        headerTitle.setText("My Awesome Apps !");
-        openPopularMoviesAppBtn.setText("Popular Movies");
-        openBuildItBiggerAppBtn.setText("Build It Bigger");
-        openStockHawkAppBtn.setText("Stock Hawk");
-        openGoUbiquitousAppBtn.setText("Go Ubiquitous");
-        openMakeYourAppMaterialAppBtn.setText("Make Your App Material");
-        openCapstoneAppBtn.setText("Capstone App");
+        headerTitle.setText(R.string.app_header);
+        openPopularMoviesAppBtn.setText(R.string.app_popular_movies_button);
+        openBuildItBiggerAppBtn.setText(R.string.app_build_it_bigger);
+        openStockHawkAppBtn.setText(R.string.app_stock_hawk);
+        openGoUbiquitousAppBtn.setText(R.string.app_ubiquitous);
+        openMakeYourAppMaterialAppBtn.setText(R.string.app_make_it_material);
+        openCapstoneAppBtn.setText(R.string.app_capstone);
     }
 
     /***
@@ -75,32 +75,32 @@ public class MainActivity extends AppCompatActivity {
      */
     public void openPopularMoviesApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("PopularMoviesApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_popular_movies_button)), Toast.LENGTH_LONG).show();
     }
 
     public void openStockHawkApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("StockHawkApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_stock_hawk)), Toast.LENGTH_LONG).show();
     }
 
     public void openGoUbiquitousApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("GoUbiquitousApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_ubiquitous)), Toast.LENGTH_LONG).show();
     }
 
     public void openBuildItBiggerApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("BuildItBiggerApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_build_it_bigger)), Toast.LENGTH_LONG).show();
     }
 
     public void openMakeYourAppMaterialApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("MakeYourAppMaterialApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_make_it_material)), Toast.LENGTH_LONG).show();
     }
 
     public void openCapstoneApp(View contentView)
     {
-        Toast.makeText(this, returnTextForToast("CapstoneApp"), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, returnTextForToast(getResources().getString(R.string.app_capstone)), Toast.LENGTH_LONG).show();
     }
 
     /***
@@ -110,6 +110,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public String returnTextForToast(String appName)
     {
-        return ("This button will launch my ".concat(appName));
+        return ("This button will launch my ".concat(appName).concat(" App"));
     }
 }
