@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -42,13 +44,6 @@ public class MainActivity extends AppCompatActivity {
         setComponentTitlesProgramatically();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
     /***
      * Initialize components  used in the activity
      */
@@ -77,4 +72,48 @@ public class MainActivity extends AppCompatActivity {
         openCapstoneAppBtn.setText("Capstone App");
     }
 
+    /***
+     * The following methods with open*() would redirect to the appropriate app once developed.
+     * At present it displays a toast message appropriately.
+     * @param contentView The view where action is defined is passed automatically
+     */
+    public void openPopularMoviesApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("PopularMoviesApp"), Toast.LENGTH_LONG).show();
+    }
+
+    public void openStockHawkApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("StockHawkApp"), Toast.LENGTH_LONG).show();
+    }
+
+    public void openGoUbiquitousApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("GoUbiquitousApp"), Toast.LENGTH_LONG).show();
+    }
+
+    public void openBuildItBiggerApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("BuildItBiggerApp"), Toast.LENGTH_LONG).show();
+    }
+
+    public void openMakeYourAppMaterialApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("MakeYourAppMaterialApp"), Toast.LENGTH_LONG).show();
+    }
+
+    public void openCapstoneApp(View contentView)
+    {
+        Toast.makeText(this, returnTextForToast("CapstoneApp"), Toast.LENGTH_LONG).show();
+    }
+
+    /***
+     * This method used to form string message
+     * @param appName Application name that is to be launched
+     * @return Toast Message
+     */
+    public String returnTextForToast(String appName)
+    {
+        return ("This button will launch my ".concat(appName));
+    }
 }
