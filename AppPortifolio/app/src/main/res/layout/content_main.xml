@@ -39,42 +39,42 @@
         <Button
             android:background="@color/orange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/popularMoviesRedirectionButton"/>
 
         <Button
             android:background="@color/orange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/stockHawkRedirectionButton"/>
 
         <Button
             android:background="@color/orange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/buildItBiggerRedirectionButton"/>
 
         <Button
             android:background="@color/orange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/makeYourAppMaterialRedirectionButton"/>
 
         <Button
             android:background="@color/orange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/goUbiquitousRedirectionButton"/>
 
         <Button
             android:background="@color/deepOrange"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/capstoneRedirectionButton"/>
 
