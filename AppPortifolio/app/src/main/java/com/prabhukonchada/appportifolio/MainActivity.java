@@ -21,12 +21,12 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     TextView headerTitle;
-    Button openPopularMoviesApp;
-    Button openStockHawkApp;
-    Button openBuildItBiggerApp;
-    Button openMakeYourAppMaterialApp;
-    Button openGoUbiquitousApp;
-    Button openCapstoneApp;
+    Button openPopularMoviesAppBtn;
+    Button openStockHawkAppBtn;
+    Button openBuildItBiggerAppBtn;
+    Button openMakeYourAppMaterialAppBtn;
+    Button openGoUbiquitousAppBtn;
+    Button openCapstoneAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,12 +55,12 @@ public class MainActivity extends AppCompatActivity {
     public void initComponents()
     {
         headerTitle = (TextView)findViewById(R.id.headerText);
-        openPopularMoviesApp = (Button)findViewById(R.id.popularMoviesRedirectionButton);
-        openBuildItBiggerApp = (Button)findViewById(R.id.buildItBiggerRedirectionButton);
-        openStockHawkApp = (Button)findViewById(R.id.stockHawkRedirectionButton);
-        openGoUbiquitousApp = (Button)findViewById(R.id.goUbiquitousRedirectionButton);
-        openCapstoneApp = (Button)findViewById(R.id.capstoneRedirectionButton);
-        openMakeYourAppMaterialApp = (Button)findViewById(R.id.makeYourAppMaterialRedirectionButton);
+        openPopularMoviesAppBtn = (Button)findViewById(R.id.popularMoviesRedirectionButton);
+        openBuildItBiggerAppBtn = (Button)findViewById(R.id.buildItBiggerRedirectionButton);
+        openStockHawkAppBtn = (Button)findViewById(R.id.stockHawkRedirectionButton);
+        openGoUbiquitousAppBtn = (Button)findViewById(R.id.goUbiquitousRedirectionButton);
+        openCapstoneAppBtn = (Button)findViewById(R.id.capstoneRedirectionButton);
+        openMakeYourAppMaterialAppBtn = (Button)findViewById(R.id.makeYourAppMaterialRedirectionButton);
     }
 
     /***
@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
     public void setComponentTitlesProgramatically()
     {
         headerTitle.setText("My Awesome Apps !");
-        openPopularMoviesApp.setText("Popular Movies");
-        openBuildItBiggerApp.setText("Build It Bigger");
-        openStockHawkApp.setText("Stock Hawk");
-        openGoUbiquitousApp.setText("Go Ubiquitous");
-        openMakeYourAppMaterialApp.setText("Make Your App Material");
-        openCapstoneApp.setText("Capstone App");
+        openPopularMoviesAppBtn.setText("Popular Movies");
+        openBuildItBiggerAppBtn.setText("Build It Bigger");
+        openStockHawkAppBtn.setText("Stock Hawk");
+        openGoUbiquitousAppBtn.setText("Go Ubiquitous");
+        openMakeYourAppMaterialAppBtn.setText("Make Your App Material");
+        openCapstoneAppBtn.setText("Capstone App");
     }
 
 }

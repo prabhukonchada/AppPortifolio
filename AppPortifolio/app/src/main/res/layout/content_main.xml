@@ -42,6 +42,7 @@
         -->
 
         <Button
+            android:onClick="openPopularMoviesApp"
             android:background="@drawable/udacity_projects_button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
@@ -49,6 +50,7 @@
             android:id="@+id/popularMoviesRedirectionButton"/>
 
         <Button
+            android:onClick="openStockHawkApp"
             android:background="@drawable/udacity_projects_button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
@@ -56,6 +58,7 @@
             android:id="@+id/stockHawkRedirectionButton"/>
 
         <Button
+            android:onClick="openBuildItBiggerApp"
             android:background="@drawable/udacity_projects_button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
@@ -63,6 +66,7 @@
             android:id="@+id/buildItBiggerRedirectionButton"/>
 
         <Button
+            android:onClick="openMakeYourAppMaterialApp"
             android:background="@drawable/udacity_projects_button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
@@ -70,6 +74,7 @@
             android:id="@+id/makeYourAppMaterialRedirectionButton"/>
 
         <Button
+            android:onClick="openGoUbiquitousApp"
             android:background="@drawable/udacity_projects_button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
@@ -77,6 +82,7 @@
             android:id="@+id/goUbiquitousRedirectionButton"/>
 
         <Button
+            android:onClick="openCapstoneApp"
             android:background="@drawable/capstone_project_button_style"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_width="200dp"
