@@ -19,9 +19,9 @@
 
     <!-- Styling buttons here to avoid repetitive lines in the layout file and maintain a common ground  -->
     <style name="redirectionButtonStyles">
-        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_width">@dimen/button_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/button_vertical_margin_bottom</item>
         <item name="android:background">@drawable/udacity_projects_button</item>
     </style>
     
