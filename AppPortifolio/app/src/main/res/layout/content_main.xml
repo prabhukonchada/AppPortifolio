@@ -42,34 +42,40 @@
         -->
 
         <Button
-            android:onClick="openPopularMoviesApp"
+            android:onClick="openApplication"
+            android:text="Popular Movies"
             style="@style/redirectionButtonStyles"
             android:id="@+id/popularMoviesRedirectionButton"/>
 
         <Button
-            android:onClick="openStockHawkApp"
+            android:text="Stock Hawk"
+            android:onClick="openApplication"
             style="@style/redirectionButtonStyles"
             android:id="@+id/stockHawkRedirectionButton"/>
 
         <Button
-            android:onClick="openBuildItBiggerApp"
+            android:text="Build It Bigger"
+            android:onClick="openApplication"
             style="@style/redirectionButtonStyles"
             android:id="@+id/buildItBiggerRedirectionButton"/>
 
         <Button
-            android:onClick="openMakeYourAppMaterialApp"
+            android:onClick="openApplication"
+            android:text="Make Your App Material"
             style="@style/redirectionButtonStyles"
             android:id="@+id/makeYourAppMaterialRedirectionButton"/>
 
         <Button
-            android:onClick="openGoUbiquitousApp"
+            android:onClick="openApplication"
+            android:text="Go Ubiquitous"
             style="@style/redirectionButtonStyles"
             android:id="@+id/goUbiquitousRedirectionButton"/>
 
         <!-- This is overriding the drawable predefined in style-->
 
         <Button
-            android:onClick="openCapstoneApp"
+            android:onClick="openApplication"
+            android:text="Capstone"
             android:background="@drawable/capstone_project_button_style"
             style="@style/redirectionButtonStyles"
             android:id="@+id/capstoneRedirectionButton"/>

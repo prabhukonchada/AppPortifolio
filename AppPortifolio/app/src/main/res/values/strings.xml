@@ -6,11 +6,13 @@
     <string name="app_header">My Awesome Apps !</string>
 
     <!-- Button Names In The App-->
-    <string name="app_popular_movies_button">Popular Movies</string>
-    <string name="app_build_it_bigger">Build It Bigger</string>
-    <string name="app_stock_hawk">Stock Hawk</string>
-    <string name="app_ubiquitous">Go Ubiquitous</string>
-    <string name="app_make_it_material">Make Your App Material</string>
-    <string name="app_capstone">Capstone</string>
+    <string name="app_popular_movies">This button will launch my Popular Movies App</string>
+    <string name="app_build_it_bigger">This button will launch my Build It Bigger App</string>
+    <string name="app_stock_hawk">This button will launch my Stock Hawk App</string>
+    <string name="app_ubiquitous">This button will launch my Go Ubiquitous App</string>
+    <string name="app_make_it_material">This button will launch my Make Your App Material App</string>
+    <string name="app_capstone">This button will launch my Capstone App</string>
+
+
 
 </resources>
